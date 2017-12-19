@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Anatomy of Hashtags</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="project/images/globe.ico" />
+    <style>
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+
+        .licences p {
+            font-size: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        .jumbotron {
+            background-color: #3b3b3b;
+            color: #fff;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+        .logo-small {
+            color: #3b3b3b;
+            font-size: 50px;
+        }
+        .logo {
+            color: #3b3b3b;
+            font-size: 200px;
+        }
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+        .carousel-control.right, .carousel-control.left {
+            background-image: none;
+            color: #3b3b3b;
+        }
+        .carousel-indicators li {
+            border-color: #3b3b3b;
+        }
+        .carousel-indicators li.active {
+            background-color: #3b3b3b;
+        }
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+        .item span {
+            font-style: normal;
+        }
+        .panel {
+            border: 1px solid #3b3b3b;
+            border-radius:0 !important;
+            transition: box-shadow 0.5s;
+        }
+        .panel:hover {
+            box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+        }
+        .panel-footer .btn:hover {
+            border: 1px solid #3b3b3b;
+            background-color: #fff !important;
+            color: #3b3b3b;
+        }
+
+        .dlab {
+            max-height: 100px;
+            background: white;
+        }
+        .panel-heading {
+            color: #fff !important;
+            background-color: #3b3b3b !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        .panel-footer {
+            background-color: white !important;
+        }
+        .panel-footer h3 {
+            font-size: 32px;
+        }
+        .panel-footer h4 {
+            color: #aaa;
+            font-size: 14px;
+        }
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #3b3b3b;
+            color: #fff;
+        }
+        .navbar {
+            margin-bottom: 0;
+            background-color: #000000;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+        }
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #3b3b3b !important;
+            background-color: #fff !important;
+        }
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #3b3b3b;
+        }
+        .slideanim {visibility:hidden;}
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+        }
+
+        .intro_image {
+            max-height: 400px;
+            width: 100%;
+        }
+
+        .intro {
+            background-image: url("plots/bg.jpg")
+        }
+
+        .triangle-right {
+            width: 0;
+            height: 0;
+            border-top: 25px solid transparent;
+            border-left: 50px solid #555;
+            border-bottom: 25px solid transparent;
+        }
+
+        .triangle-left {
+            width: 0;
+            height: 0;
+            border-top: 25px solid transparent;
+            border-right: 50px solid #555;
+            border-bottom: 25px solid transparent;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="row">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage">ANATOMY OF HASHTAGS</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#BLM">BLM</a></li>
+                <li><a href="#RESIST">RESIST</a></li>
+                <li><a href="#MISOGYNY">MISOGYNY</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center intro">
+    <div class="container row" >
+        <div class="col-lg-8 col-sm-12">
+            <h1>ANATOMY OF HASHTAGS</h1>
+            <p>A SUCCINT YET VERBOSE ANALYSIS ON HASHTAGS</p>
+        </div>
+    </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="ABOUT" class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2>A brief introduction to the study case</h2>
+            <p>
+                As global markets expand and become more interconnected, businesses are increasingly looking for resources to help identify competitive and profitable opportunities. Several data leakages in the last years have shown that a common approach to this is the creation of offshore companies, i.e. companies created in low-tax, offshore jurisdictions.
+                Our goal is to analyze motivating factors for creating
+                such offshore entities. We believe that a better understanding of the reasons can help to find ways to deal with those tendencies. This has an impact on the social good, because fiscal prudence and opennesss in international trade can have a powerful effect on improving society.
+            </p>
+            <p>
+                Our analysis is based on data provided in the Offshore Leaks Database <a href="#db_leak">[1]</a>. It contains information about 500,000 offshore companies, foundations and trusts including links to people and companies in more than 200 countries and territories. The information comes from the Panama Papers, the Offshore Leaks and the Bahamas Leaks investigations cunducted in the years 2013 to 2016. While those data leaks contain diverse sorts of documents from emails to bank documents, the database provides only structured overview information excluding the raw files themselves. The latest investigation on the Paradise Papers that was released in November 2017 is not included in our analysis.
+            </p>
+            <p>
+                In order to better understand the underlying structures of the offshore business we analyze the available data on the level of countries. We identify the most involved countries and try to find factors that characterize those countries. To this aim we enrich the dataset with information about the economical and social background of countries from the Index of Economic Freedom<a
+                    href="#index">[2]</a>.
+                Furthermore, we investigate how the different countries are connected and how their presence in the offshore business evolved in the last years. In particular, we wanted to see whether the publication of the leaks influenced those developments in some way.
+            </p>
+            <hr>
+            <h4>Terminology</h4>
+            <p>
+                Before we present our findings we want to clarify some of the used terminology:
+            </p>
+
+            <ul class="text-left">
+                <li><b>Offshore entity</b>: A company, trust or fund created in a low-tax, offshore location.</li>
+                <li><b>Jurisdiction</b>: In general the term juridiction describes a territory over which authority is exercised. In the context of offshore entities we use it to refer to the country in which the offshore is founded, i.e. the tax haven.</li>
+                <li><b>Incorporation and Inactivation</b>: Those to terms refer to the process of founding and closing an offshore entity, respectively.</li>
+                <li><b>Net amount</b>: difference between incorporations and inactivations.</li>
+            </ul>
+            <br>
+            <br>
+        </div>
+        <div class="row text-center">
+            <h2>
+                A close look to the most involved
+                <b class="w3-text-blue">Countries</b> and
+                <b class="w3-text-blue">jurisdictions</b>
+            </h2>
+            <div class="col-lg-12 text-center">
+                <br>
+                <h5>Number of Entities by Jurisdiction</h5>
+                <iframe id="1" scrolling="no" style="border:none;" seamless="seamless" src="plots/number_tweets.html" height="700" width="100%"></iframe>
+            </div>
+            <div class="col-lg-12 text-center">
+                <br>
+                <h5>Number of Entities by Origin Country</h5>
+                <iframe id="2" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/43.embed?link=false" height="700" width="100%"></iframe>
+            </div>
+            <hr>
+            <h2>
+                Interesting insights
+            </h2>
+            <p>
+                Above are two plots describing the number of entities opened throughout the years in both the tax haven " jurisdictions " and the origin/destination countries. The first thing that caught our attention is the amount of missing data, in particular, the entities without a registered origin in the Bahamas. Despite the loss of information, this shows that the Bahamas is a country of special interest and worth
+                being investigated.
+                Looking at the tax havens we can see a strong presence of British overseas territories and Crown
+                Dependencies such as British Virgin Islands, Cayman Islands, and British Anguilla, alongside British Commonwealth territories like the Bahamas and Cook Islands. Most of the countries heavily involved
+                in the scheme have some sort of financial secrecy. A detailed look into countries according to their secrecy and the scale of their offshore financial activities can be found in the Financial Secrecy Index <http://www.financialsecrecyindex.com/introduction/fsi-2015-results>.
+                Now looking at the number of entities opened from origin countries, we can see the prescence of a
+                significant number of tax havens. Those were interpreted as entities that were terminated then
+                re-established again at a certain period of time in the same country, or a movement of entities
+                from one haven to another.
+            </p>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 text-center">
+                <iframe id="3" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~shamanga/13.embed?link=false" height="700" width="100%"></iframe>
+            </div>
+            <div class="col-lg-4 text-center">
+                <hr>
+                <br>
+                <br>
+                <h2>Where do the <b class="w3-text-blue">most involved countries</b> are investing?</h2>
+                <p>
+                    As the number of offshore entities increase, the number of tax havens involved increases. Of course this is only a small portion of the data available in the real world but it can be seen that most of the countries invest in Panama and British Virgin Islands. It would have been truly interesting to see the true distribution of the entities registered in Bahamas. Although Paradise papers <https://www.icij.org/investigations/paradise-papers/icij-releases-paradise-papers-data-appleby/> were not analyzed, it is worth to note that more than 70 percent of the new records belong to entities incorporated in Bermuda and the Cayman Islands.
+                </p>
+                <br>
+                <br>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <hr>
+                <br>
+                <br>
+                <h2 class="">Let's look at their <b class="w3-text-blue">Economical Factors</b></h2>
+                <p>
+                    Trying to investigate if origin countries with high entity count are economically similar, we applied principal component analysis on the Index of Economic Freedom using only the data of the countries that are involved in the leak. This data is divided into 5 main categories ( Rule of law, Government size, Regulatory efficiency, Open markets, and Monetary measures) each of which is sub-divided into more detailed features. We can clearly see that most of the top 12 origin countries ( with respect to entity count ) ( colored blue ) are on the left-side of the x-axis and close to each other. This indicates that those countries indeed have similar economical factors. It is necessary to note that not ONLY the countries with great economic standing are the ones that invest the most, but also the ones with mediocre overall economy have a great contribution. However, this may be due to the fact that this data only points to a fraction of what really is out there.                </p>
+                <br>
+                <br>
+                <hr>
+            </div>
+            <div class="col-lg-8 col-sm-12 text-center">
+                <iframe id="distribution" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~shamanga/7.embed?link=false" height="800" width="100%"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="BLM" class="container bg-white">
+    <div class="row ">
+        <div class="col-lg-12">
+            <hr>
+            <h2>Extricating the <b class="w3-text-blue">connections</b></h2>
+            <p>
+                Let us now take a closer look at how the different countries are connected. We measure the connectedness of two countries by the number of offshores coming from one country founded in the other country.
+                <br>
+                To begin with, we want to see if there is a pattern in the way players in origin countries select special countries for their offshores. Therefore, we cluster the origin countries into groups with similar selection information using k-means clustering.
+                <br>
+                The selection patterns of the four resulting clusters are visualized in the matrices below. Each row corresponds to an origin country and each column to a goal country. The color of a cell indicates for the corresponding origin country the relative frequency of offshores that where founded in the corresponding goal country.
+            <hr>
+            <p>
+                And indeed it is easy to see a pattern that characterizes the countries which are in the same cluster: The first cluster contains those countries where the majority of offshore entities are founded on the British Virgin Islands. The second cluster contains the countries with most offshore entities in Panama, the third those countries with a mojority of entities on the Seychelles. The countries in the fourth cluster show more diverse distributions of destination countries. However there are still interesting patterns. For example, for many countries in this cluster the main destination of entities is the country itself, see for example the Cook Islands or Samoa.
+            </p>
+            <div class="row slideanim">
+                <div class="col-lg-12 col-sm-12">
+                    <iframe id="4" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/49.embed?link=false" height="600" width="100%"></iframe>
+                </div>
+                <div class="col-lg-12 col-sm-12">
+                    <iframe id="5" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/51.embed?link=false" height="600" width="100%"></iframe>
+                </div>
+                <div class="col-lg-12 col-sm-12">
+                    <iframe id="6" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/53.embed?link=false" height="600" width="100%"></iframe>
+                </div>
+                <div class="col-lg-12 col-sm-12">
+                    <iframe id="7" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/55.embed?link=false" height="600" width="100%"></iframe>
+                </div>
+            </div>
+            <p>
+                <br>
+                Now that we know that the countries can be categorized by the way jurisdictions for offshores are selected, an obvious question to ask is what causes those different structures. In other words, we want to know how the countries that are in the same cluster are similar to each other and different to the coutries in other clusters. This in turn could help us to find the underlying factors that motivate the selection of destination countries.
+            <hr>
+            </p>
+            <div class="row slideanim">
+                <div class="col-lg-12 col-sm-12 text-center">
+                    <h2 class="">What's their <b class="w3-text-blue"> geographical</b> location?</h2>
+                    <h4 class="">Countries ISO 3166-1 numeric code is obtained through <a class="w3-text-indigo" href="https://restcountries.eu/">Restcountries API</a>.</h4>
+                    <p>
+                        The first thing we consider as a possible factor is geographical closeness. To this means we draw a map1 where the color of each country represents its cluster. Countries colored in white do not occur in the database and therefore do not belong to any cluster. We observe that most South American countries (Brasil being the most apparent exception) have the majority of offshore entities in Panama (Cluster 1). In Northern America and the UK, most offshore entities are founded on the British Virgin Islands. So indeed geographical closeness might be a factor. Other interesting observations include that most of the countries in Cluster 2 are African. The only exceptions are Bulgaria and the Seychelles (which is also the most popular tax haven in these countries).
+                    </p>
+                    <iframe id="map" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/47.embed?link=false" height="700" width="100%"></iframe>
+                </div>
+            </div>
+            <div class="row slideanim">
+                <div class="col-lg-8 col-sm-12 text-center">
+                    <iframe id="pca_clusters" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~shamanga/9.embed?link=false" height="800" width="100%"></iframe>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <hr>
+                    <br>
+                    <br>
+                    <h2><b class="w3-text-blue">Clusters</b> are not sharing economical factors</h2>
+                    <p>
+                        The next possible factors we consider are of economical nature. We investigate which influence the economic factors specified in the Index of Eonomic freedom data set have on the assignment to the clusters. There are several ways to tackle this question. One approach we took was to do a multinomial logit which predicts the cluster from the economical factors. As economical factors, we considered the gross domestic product (GDP), the GDP growth rate, government expenditures, the infalation, foreign direct investment (FDI) inflow and the public debt. We then interpreted the coefficients of the classifier. It turned out that none of the mentionned factors have a significant influence. Another approach is to do a principal component analysis (PCA). A PCA considering the three main factors can be visulized as follows, where every point corresponds to a country and the color indicates its cluster.
+                        <br>
+                        Similarly to the previous analysis, it is difficult to see a pattern in this. Therefore, we conclude that the economic factors we analyzed have no influence.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <hr>
+                    <h2>So what?</h2>
+                    <p>
+                        Note that in general this kind of reasoning only enables us to restrict the set of possible factors, while it does not enable us to identify the relevant factors with certainty. This would require more background research by experts. We still think that the map is a good basis to detact interesting tendencies. For example, starting from there one could try to see whether countries belonging to the Commonwealth of nations belong to the same cluster. We observe that the UK, India and Australia are in the same cluster. However, Canada is not. One can think of many questions like this considereing the historical and political background of countries.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row slideanim">
+                <div class="col-lg-12 col-sm-12 text-center">
+                    <h2 class="">Is the <b class="w3-text-blue">Network</b> of the countries interesting?</h2>
+                    <p>The network below describes if there is an established connection between two countries. As expected the countries present at the inner core of the network are the countries with the most number of connections which naturally are the tax havens. As we move from the inner core of the network to the outer core we can notice that the number of connections is decreasing but yet significant, and those are the origin countries that are most involved in the data. At the shell, the network represents the countries with the least amount of connections and can also be interpreted as the countries that are least involved. Keep in mind that a connection here only resembles that there is a link between those two countries and doesn't tell us anything about the number of entities entrenched. It is still valid that a country with one connection may have a large number of entities but that is not the general trend. As mentioned previously, we have seen cases where there is local activity within a country and those were terminated from the graph due to them being self loops, hence the presence of some nodes without any connections.</p>
+                    <hr>
+                    <iframe id="network" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/57.embed?link=false" height="800" width="100%"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="RESIST" class="container text-center">
+    <div class="row slideanim">
+        <h2>How are the countries acting <b class="w3-text-blue">throughout the years</b> ?</h2>
+        <p>
+            We choose to analyze the behavior of the 50 most involved countries by clusters,
+            keeping only the top 5 countries for each of them. Cluster 3 is composed only
+            by Seychelles since the other members of the cluster are not included in the 50 most involved.
+        </p>
+        <hr>
+        <p>
+            The graphs in the figures below show the amount of incorporations and inactivations that
+            each country has registered throughout the years. Considering the previously analyzed clusters,
+            we want to highlight the behavior of the countries that make up these macro-groups by analyzing
+            their behavior over the years. Recall that these clusters are designed to identify patterns in
+            the way that certain countries invest, in fact each country is assigned to a specific cluster
+            based on the geographical displacement of its offshore accounts.
+        </p>
+        <hr>
+    </div>
+    <div class="row slideanim">
+        <div class="col-lg-12 col-sm-12">
+            <h2>Registered <b class="w3-text-green">Incorporations</b></h2>
+            <h5>Number of incorporations per countries throughout the years</h5>
+            <iframe id="10" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/38.embed?link=false" height="400" width="100%"></iframe>
+        </div>
+    </div>
+    <br><br>
+    <div class="row slideanim">
+        <div class="col-lg-12 col-sm-12">
+            <h2>Registered <b class="w3-text-red">Inactivations</b></h2>
+            <h5>Number of inactivations per countries throughout the years</h5>
+            <iframe id="11" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/39.embed?link=false" height="400" width="100%"></iframe>
+        </div>
+    </div>
+    <div id="analysis_trends" class="container-fluid">
+        <h2>Some clusters are more <b class="w3-text-blue">actives</b> than others</h2>
+        <hr>
+        <p>
+            Countries belonging to the same clusters show similar trends on the size of their
+            movements, both for incorporations and inactivations. As shown in Figure 3.A, all the clusters
+            share a similar trend regarding the creation of new offshores accounts. More precisely, the
+            majority of countries experienced a peak of movements in the years preceding 2007, with some
+            particular differences. For both clusters 2 and 4, the countries within them tend to share
+            the same trend regarding the incorporation of offshores and slightly different trends regarding
+            the inactivation of them, as show in Figure 3.B. Cluster 1, which is also the cluster with the
+            highest number of registered accounts is composed by countries that are acting almost
+            independently between them:
+        </p>
+        <ul class="w3-ul w3-light-gray">
+            <li>Switzerland and British Virgin Islands reached their pick of number of incorporations respectively in <b class="w3-text-red">2005</b> and <b class="w3-text-red">2007</b>.</li>
+            <li>Hong Kong kept increasing its number until <b class="w3-text-red">2010</b>, after that year the number of incorporations suffered a sharp fall.</li>
+            <li>Jersey and United Kingdom registered their highest number of incorporations before the <b class="w3-text-red">2000</b>, rispectively in <b class="w3-text-red">1999</b> and <b class="w3-text-red">1997</b>.</li>
+        </ul>
+    </div>
+    <div id="behavior_analysis" class="container-fluid">
+        <div class="row slideanim">
+            <div class="col-lg-12 col-sm-12">
+                <hr>
+                <div class="">
+                    <h1><b>A close look into the most involved countries</b></h1>
+                    <p>In the candle plots below we can find some evidences about the
+                    behaviour of the most involved countries.
+                    Our aim is to represent the differences between incorporations
+                    and inactivations throughout the years in each <b>origin Country</b>.
+                        <br><b class="w3-text-green">Green</b> candles are showing that the number of incorporations is higher than the number of inactivations. Where the highest point represents the number of incorporations while the lowest is representing the number of inactivations.
+                        <br>Viceversa, <b class="w3-text-red">Red</b> candles highlight that the number of inactivations is higher than the number of incorporations, furthermore the highest point represents the number of inactivations and the lowest is representing the number of incorporations.</p>
+                </div>
+                <div class="row">
+                    <h2><b>The majority of the countries has decreasing trend</b></h2>
+                    <p>
+                        Switzerland and Luxembourg are behaving in a really similar way, they both reached their maximum number of
+                        incorporations in 2005 keeping a positive trend until 2008. From 2009 the number of inactivations has clearly surpassed the number of incorporations,
+                        which reached its minimum in the last years. It is evident that both countries seem to have lost interest in creating new accounts.
+                    </p>
+                    <div class="col-lg-6 col-sm-12">
+                        <iframe id="d" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/31.embed?link=false" height="500" width="100%"></iframe>                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <iframe id="a" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/23.embed?link=false" height="500" width="100%"></iframe>
+                    </div>
+                    <p>
+                        Different situation for Bahamas and Hong Kong that have undergone a sudden change in the latest years after 2013. Both have suffered a
+                        downturn both in the incorporations and in inactivations numbers, a symptom of the fact that probably the people from this countries stopped
+                        investing after the first leak.
+                    </p>
+                    <div class="col-lg-6 col-sm-12">
+                        <iframe id="b" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/21.embed?link=false" height="500" width="100%"></iframe>                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <iframe id="c" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/33.embed?link=false" height="500" width="100%"></iframe>                    </div>
+                    <p>
+                        Anyway, we should take into consideration that both the trends are
+                        built with a fraction of the entire world situation, which is the
+                        only one available in the offshore leak dataset. This means that we do not
+                        have reliable data to state something which is 100% truthful
+                        about these trends, but we can have an overall idea of countries situation.
+                    </p>
+                </div>
+                <div class="">
+                    <h2><b>China is showing increasing interest</b></h2>
+                    <p>
+                        As said before, the majority of the countries are following a negative trends in the last years.
+                        This is not the case of China which has undergone an abrupt decrease after 2007 keeping always an
+                        overall positive trend, but since 2013 (year of the biggest leak) the number of incorporations has
+                        exponentially increased, while the number of inactivations remained constant.
+                        <br>
+                        In the plot on the right we can look where China is investing. We can clearly see that before 2012 China was mainly investing
+                        in British Virgin Islands, while after 2012 the displacement of the offshores in the tax haven countries
+                        is well diversified.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <iframe id="china_trend" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/19.embed?link=false" height="500" width="100%"></iframe>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <iframe id="china_dist" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~puccife/17.embed?link=false" height="500" width="100%"></iframe>                     </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <hr>
+                        <br>
+                        <h2><b>Recap</b></h2>
+                        <div class="row w3-card-4">
+                            <div class="col-lg-4 w3-padding-large">
+                                <h4 class="">
+                                    <b class="w3-badge w3-padding-large w3-red w3-margin-bottom">1</b><br>In the years following 2007 many countries experienced a dizzying fall regarding the number of created offshore accounts. Is this related to the 2008 economic crisis?
+                                </h4>
+                            </div>
+                            <div class="col-lg-4 w3-padding-large">
+                                <h4 >
+                                    <b class="w3-badge w3-padding-large w3-red w3-margin-bottom">2</b><br>For each country, we register the highest number of inactivations approximately five years after we registered the highest number of incorporations.
+                                </h4>
+                            </div>
+                            <div class="col-lg-4 w3-padding-large">
+                                <h4 class="">
+                                    <b class="w3-badge w3-padding-large w3-red w3-margin-bottom">3</b><br>From 2010 onwards only a minority of countries continue to increase the number of offshores founded annually. China between them is the one with the most positive trend.
+                                </h4>
+                            </div>
+                        </div>
+                        <br>
+                        <h4>All these points led us think that there might be a connection between the size of the movement in each country and the stock market. 2008 in particular, the year of the biggest global economical crisis, is a year that acts as a watershed between positive and negative trends in several countries.
+                        As a conclusion of this work we will look at China's stock market and we will compare it to the candle plot previously seen.</h4>
+                        <hr>
+                        <br>
+                        <h2 class="">
+                            Shanghai stock exchange comparison
+                        </h2>
+                        <p>
+                            In the financial chart below it's shown the Shanghai Stock Exchange. Shanghai Stock Exchange is the world's 5th largest stock market
+                            by market capitalization at US$3.5 trillion as of February 2016, and 2nd largest in East Asia and Asia.
+                            <br>Similarities with the candle plot above regarding China's trends in terms of incorporations and inactivations are really evident, however
+                            that's not enough to state wheter there is a true correlation or not, mostly based on the fact that we're considering only the fraction that has been leaked.
+
+                        </p>
+                        <iframe id="china_stock" scrolling="no" style="border:none;" seamless="seamless" src="https://tvchart.tradingeconomics.com/c?s=SHCOMP:IND&interval=M&locale=com&originUrl=https://tradingeconomics.com/china/stock-market" height="500" width="100%"></iframe>                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="conclusions">
+        <hr>
+        <br>
+        <div class="row slideanim">
+            <h2>Conclusions</h2>
+            <p>
+                We analyzed the underlying structure of the offshore businesses on a country level. The Bahamas, the British Virgin Islands, Panama, and the Seychelles were identified as the most involved jurisdictions. On the other hand the most involved origin countries with respect to the outflow of entities are Hong Kong, Switzerland, United Kingdom, Luxembourg and the United Arab Emirates. A closer investigation showed that the most involved countries have common economical characteristics.
+                <br>
+                To understand how the countries are connected to each other we clustered them according to the distribution of the offshore entities to jurisdictions.  This resulted in four clusters with clear selection patterns. Taking a closer look into the geographical location of the countries in each cluster we found that the countries that are relatively close show similar behaviour in how they invest. However, we could not find any significant relationship between the patterns and the economic characteristics of the countries. We think that other important influencing factors might be found in the historical and political background of the countries.
+                <br>
+                Analyzing the fluctuations of the number of active offshore entities over time we found that countries which were in the same cluster showed similar trends. Interestingly, we can find similar patterns across the clusters, in particular we see a general increase in the amount of incorporations up-to 2008, and a sudden decrease afterwards. Considering that 2008 is the year when the global financial crisis occured led us to think that there might be a link between the net amount of established entities and the stock market.
+                <br>
+                Finally, future work to extend this analysis includes integrating the latest data which was made available in the Paradise Papers leak. We think that experts in international relations and economy might be able to find more in-depth explanations for the interesting insights we found.
+            </p>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="MISOGYNY" class="container">
+    <div class="row">
+    <div class="col-lg-9">
+        <h2 class="text-center">About this project</h2>
+        <p>
+            We (Federico Pucci, Sarah Sallinger, Mazen Fouad A-wali Mahdi) are three Master's students at EPFL (École polytechnique fédérale de Lausanne). This data story was created as outcome of a project for the fall 2017 edition of the Applied Data Analysis course at EPFL.
+        </p>
+        <hr>
+        <h3>References</h3>
+        <p>
+            [1] The International Consortium of Investigative Journalists. <a id="db_leak" href="https://offshoreleaks.icij.org/pages/database" class="w3-text-indigo">Offshore Leaks Database</a>. Retrieved November 1, 2017.
+            <br>
+            [2]  The Heritage Foundation. <a id="index" href="http://www.heritage.org/index/" class="w3-text-indigo">Index of Economic Freedom</a>. Retrieved December 18, 2017.
+            <br>
+            [3] Florez, F. <a id="rest" href="https://restcountries.eu/" class="w3-text-indigo">REST Countries</a>. Retrieved December 18, 2017.
+        </p>
+    </div>
+    <div class="col-lg-3 text-center">
+        <h3>Visit our website</h3>
+        <img class="qr_code" src="insidetheleakqr.png" alt="qr_code">
+        <hr>
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+    </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+    <div class="row">
+    <div class="w3-left col-lg-2 w3-white">
+        <img src="project/images/dlab.svg" alt="dlab logo" class="dlab">
+    </div>
+    <div class="col-lg-8">
+        <img src="project/images/epfl-logo.png" alt="dlab logo" class="dlab">
+    </div>
+    <div class="w3-right col-lg-2 licences">
+        <p>
+        We are using ICIJ Offshore Leaks Database under the Open Database License and the contents under Creative Commons Attribution-ShareAlike license.
+        <br>
+        We are using RESTcountries API under Mozilla Public License MPL 2.0
+    </p></div>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function() {
+            $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+
+</body>
+</html>
